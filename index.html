@@ -9,55 +9,61 @@
 
 <style>
 
-/* الخلفية والتنسيق العام */
+/* خلفية الصفحة وتنسيق عام */
 body{
-font-family:'Tajawal',sans-serif;
-background:linear-gradient(180deg,#016b6b 0%,#c5eded 100%);
-text-align:center;
-margin:0;
-min-height:100vh;
+    font-family:'Tajawal',sans-serif;
+    background: linear-gradient(180deg,#016b6b 0%,#c5eded 100%);
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
+/* حاوية كل المحتوى */
 .container{
-max-width:420px;
-margin:auto;
-padding:40px 20px;
+    width:100%;
+    max-width:420px;
+    padding:40px 20px;
+    box-sizing:border-box;
 }
 
 /* الشعار */
 .logo{
-width:180px;
-margin-bottom:20px;
+    width:180px;
+    margin:0 auto 20px auto;
+    display:block;
 }
 
 /* عنوان الصفحة */
 .title{
-font-size:24px;
-font-weight:700;
-margin-bottom:30px;
-color:white;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:30px;
+    color:white;
 }
 
 /* بطاقات الفروع */
 .link{
-display:block;
-background:white;
-border:2px solid #016b6b;
-padding:18px;
-margin:14px 0;
-border-radius:12px;
-text-decoration:none;
-color:#016b6b;
-font-size:18px;
-font-weight:600;
-box-shadow:0 6px 14px rgba(0,0,0,0.15);
-transition:0.3s;
+    display:block;
+    background:white;
+    border:2px solid #016b6b;
+    padding:18px;
+    margin:14px 0;
+    border-radius:12px;
+    text-decoration:none;
+    color:#016b6b;
+    font-size:18px;
+    font-weight:600;
+    box-shadow:0 6px 14px rgba(0,0,0,0.15);
+    transition:0.3s;
 }
 
 .link:hover{
-transform:scale(1.05);
-background:#016b6b;
-color:white;
+    transform:scale(1.05);
+    background:#016b6b;
+    color:white;
 }
 
 </style>
@@ -67,8 +73,8 @@ color:white;
 
 <div class="container">
 
-<!-- ضع هنا الشعار الذي رفعت على GitHub -->
-<img class="logo" src="logo.png">
+<!-- ضع هنا اسم الشعار الذي رفعت على GitHub -->
+<img class="logo" src="logo.png" alt="شعار البركة">
 
 <div class="title">
 نسعد باستقبالكم
