@@ -3,66 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>جمعية البركة الخيرية</title>
+<title>فروع جمعية البركة</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
-    font-family:'Tajawal',sans-serif;
-    background:#f6f8fb;
-    text-align:center;
-    margin:0;
-    padding:0;
+font-family:'Tajawal',sans-serif;
+background:linear-gradient(180deg,#016b6b 0%,#c5eded 100%);
+text-align:center;
+margin:0;
+min-height:100vh;
 }
 
 .container{
-    padding:40px 20px;
+max-width:420px;
+margin:auto;
+padding:40px 20px;
 }
 
 .logo{
-    width:220px;
-    margin-bottom:20px;
+width:180px;
+margin-bottom:20px;
 }
 
-h1{
-    color:#1c7c54;
-    font-size:28px;
-    margin-bottom:40px;
+.title{
+font-size:24px;
+font-weight:700;
+margin-bottom:30px;
+color:white;
 }
 
-.branches{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
+/* بطاقات الفروع */
+
+.link{
+display:block;
+background:white;
+padding:18px;
+margin:14px 0;
+border-radius:12px;
+text-decoration:none;
+color:#016b6b;
+font-size:18px;
+font-weight:600;
+box-shadow:0 6px 14px rgba(0,0,0,0.15);
+transition:0.3s;
 }
 
-.branch{
-    background:white;
-    padding:20px;
-    width:170px;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.08);
-    text-decoration:none;
-    color:#333;
-    transition:0.3s;
-}
-
-.branch:hover{
-    transform:translateY(-5px);
-}
-
-.icon{
-    font-size:40px;
-    margin-bottom:10px;
-}
-
-.footer{
-    margin-top:40px;
-    font-size:14px;
-    color:#888;
+.link:hover{
+transform:scale(1.05);
 }
 
 </style>
@@ -72,37 +62,27 @@ h1{
 
 <div class="container">
 
-<img class="logo" src="ضع_رابط_الشعار_هنا" alt="شعار البركة">
+<img class="logo" src="logo.png">
 
-<h1>نسعد باستقبالكم</h1>
-
-<div class="branches">
-
-<a class="branch" href="https://maps.app.goo.gl/DhWfvW7fDoVUbUf47" target="_blank">
-<div class="icon">📍</div>
-الجامعين
-</a>
-
-<a class="branch" href="https://maps.app.goo.gl/87AP2tt2X7mYj1747" target="_blank">
-<div class="icon">📍</div>
-فرع الشاطئ
-</a>
-
-<a class="branch" href="https://maps.app.goo.gl/6xiuJ7qL5gzsLxw88" target="_blank">
-<div class="icon">📍</div>
-فرع الخير
-</a>
-
-<a class="branch" href="https://maps.app.goo.gl/6YUVgcMEyTtyu4hh6" target="_blank">
-<div class="icon">📍</div>
-فرع الجبيل
-</a>
-
+<div class="title">
+نسعد باستقبالكم
 </div>
 
-<div class="footer">
-جمعية البركة الخيرية
-</div>
+<a class="link" href="https://maps.app.goo.gl/DhWfvW7fDoVUbUf47" target="_blank">
+📍 فرع الجامعين
+</a>
+
+<a class="link" href="https://maps.app.goo.gl/87AP2tt2X7mYj1747" target="_blank">
+📍 فرع الشاطئ
+</a>
+
+<a class="link" href="https://maps.app.goo.gl/6xiuJ7qL5gzsLxw88" target="_blank">
+📍 فرع الخير
+</a>
+
+<a class="link" href="https://maps.app.goo.gl/6YUVgcMEyTtyu4hh6" target="_blank">
+📍 فرع الجبيل
+</a>
 
 </div>
 
