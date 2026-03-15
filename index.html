@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -8,8 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-/* خلفية الصفحة وتنسيق عام */
 body{
     font-family:'Tajawal',sans-serif;
     background: linear-gradient(180deg,#016b6b 0%,#c5eded 100%);
@@ -19,21 +18,32 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-}
-
-/* حاوية كل المحتوى */
-.container{
-    width:100%;
-    max-width:420px;
-    padding:40px 20px;
+    padding:20px;
     box-sizing:border-box;
 }
 
-/* الشعار */
-.logo{
-    width:180px;
+.container{
+    width:100%;
+    max-width:480px;
+    padding:40px 25px;
+    box-sizing:border-box;
+    background: rgba(255,255,255,0.05);
+    border-radius:20px;
+}
+
+/* شعار الجمعية بدون أي خلفية أو حواف */
+.logo-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     margin:0 auto 20px auto;
-    display:block;
+}
+
+.logo{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:160px; /* أقصى ارتفاع للشعار */
 }
 
 /* عنوان الصفحة */
@@ -66,6 +76,21 @@ body{
     color:white;
 }
 
+@media (max-width: 480px) {
+    .container{
+        padding:30px 15px;
+    }
+    .logo{
+        max-height:120px;
+    }
+    .title{
+        font-size:22px;
+    }
+    .link{
+        font-size:16px;
+        padding:14px 16px;
+    }
+}
 </style>
 </head>
 
@@ -73,8 +98,10 @@ body{
 
 <div class="container">
 
-<!-- ضع هنا اسم الشعار الذي رفعت على GitHub -->
-<img class="logo" src="Logo.PNG"">
+<!-- شعار الجمعية كامل بدون أي حواف بيضاء -->
+<div class="logo-wrapper">
+    <img class="logo" src="https://i.ibb.co/qMStJd7d/logo.png" alt="شعار جمعية البركة">
+</div>
 
 <div class="title">
 نسعد باستقبالكم
