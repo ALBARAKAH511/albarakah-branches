@@ -23,34 +23,45 @@ body{
 
 .container{
     width:100%;
-    max-width:480px;
+    max-width:600px;
     padding:40px 25px;
     box-sizing:border-box;
     background: rgba(255,255,255,0.05);
-    border-radius:20px;
+    border-radius:50px;
 }
 
-/* شعار الجمعية بدون أي خلفية أو حواف */
+/* تحسين عرض الشعار بدون قص */
 .logo-wrapper{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:0 auto 20px auto;
+    width:100%;
+    height:140px;
+    background-image: url('https://i.ibb.co/qMStJd7d/logo.png');
+    background-size: contain; /* أهم شيء: يمنع القص */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom:30px;
 }
 
-.logo{
-    width:auto;
-    height:auto;
-    max-width:100%;
-    max-height:160px; /* أقصى ارتفاع للشعار */
+/* وصف الجمعية */
+.org-desc{
+    font-size:13px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom:15px;
+    line-height:1.6;
 }
 
 /* عنوان الصفحة */
 .title{
     font-size:24px;
     font-weight:700;
-    margin-bottom:30px;
+    margin-bottom:5px;
     color:white;
+}
+
+/* عبارة صغيرة تحت العنوان */
+.subtitle{
+    font-size:14px;
+    color: rgba(255,255,255,0.8);
+    margin-bottom:25px;
 }
 
 /* بطاقات الفروع */
@@ -79,8 +90,8 @@ body{
     .container{
         padding:30px 15px;
     }
-    .logo{
-        max-height:120px;
+    .logo-wrapper{
+        height:110px;
     }
     .title{
         font-size:22px;
@@ -97,13 +108,21 @@ body{
 
 <div class="container">
 
-<!-- شعار الجمعية كامل بدون أي حواف بيضاء -->
-<div class="logo-wrapper">
-    <img class="logo" src="https://i.ibb.co/qMStJd7d/logo.png" alt="شعار جمعية البركة">
+<!-- الشعار بدون قص -->
+<div class="logo-wrapper"></div>
+
+<!-- وصف الجمعية -->
+<div class="org-desc">
+جمعية البركة الخيرية للخدمات الاجتماعية <br>
+المرخصة من المركز الوطني لتنمية القطاع غير الربحي برقم 511
 </div>
 
 <div class="title">
 نسعد باستقبالكم
+</div>
+
+<div class="subtitle">
+اختر الفرع المناسب 
 </div>
 
 <a class="link" href="https://maps.app.goo.gl/DhWfvW7fDoVUbUf47" target="_blank">
